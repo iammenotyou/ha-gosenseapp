@@ -14,7 +14,7 @@ import (
 	"syscall"
 	"time"
 
-	gosense "github.com/dariopb/gosense"
+	gosense "github.com/iammenotyou/gosense"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -152,7 +152,7 @@ func Run() {
 	//s.VerifySensor("7779768D")
 
 	// Start the REST api for easy qurying/managing
-	api, err := NewRestApi(8080)
+	api, err := NewRestApi(8380)
 	if err != nil {
 		log.Error(err.Error())
 		os.Exit(3)
